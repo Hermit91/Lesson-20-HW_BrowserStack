@@ -1,6 +1,8 @@
 package gmail.salokin1991.helpers;
 
+import gmail.salokin1991.config.CredentialConfig;
 import io.qameta.allure.Attachment;
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.RemoteWebDriver;
