@@ -14,6 +14,7 @@ public class Browserstack {
 
 
     public static String videoUrl(String sessionId) {
+
         return given()
                 .auth().basic("qaguru_B5xciN", "TzFxj7ss7siMKTxUURLy")
                 .when()
@@ -23,5 +24,6 @@ public class Browserstack {
                 .log().body()
                 .extract()
                 .path("automation_session.video_url");
+
     }
 }

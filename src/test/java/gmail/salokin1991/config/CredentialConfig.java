@@ -6,9 +6,13 @@ import org.aeonbits.owner.Config;
 public interface CredentialConfig extends Config {
 
     String user();
+
     String key();
+
     String appUrl();
+
     String remoteUrl();
+
     String videoUrl();
 
 }

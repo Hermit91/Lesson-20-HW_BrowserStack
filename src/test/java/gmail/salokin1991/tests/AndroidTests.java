@@ -17,19 +17,19 @@ public class AndroidTests extends TestBase {
     void searchTest() {
 
         step("Tap header menu", () -> {
-        $(MobileBy.id("org.wikipedia.alpha:id/menu_overflow_button")).click();
+            $(MobileBy.id("org.wikipedia.alpha:id/menu_overflow_button")).click();
         });
         step("Tap settings", () -> {
-        $(MobileBy.id("org.wikipedia.alpha:id/explore_overflow_settings")).click();
+            $(MobileBy.id("org.wikipedia.alpha:id/explore_overflow_settings")).click();
         });
         step("Tap Wikipedia Language", () -> {
-        $(MobileBy.id("android:id/summary")).click();
+            $(MobileBy.id("android:id/summary")).click();
         });
         step("Select input field? than type 'English'", () -> {
-        $(MobileBy.id("org.wikipedia.alpha:id/preference_languages_filter")).sendKeys("English");
+            $(MobileBy.id("org.wikipedia.alpha:id/preference_languages_filter")).sendKeys("English");
         });
         step("Check language selection field visibility", () -> {
-        $(MobileBy.id("org.wikipedia.alpha:id/preference_languages_list")).shouldBe(visible);
+            $(MobileBy.id("org.wikipedia.alpha:id/preference_languages_list")).shouldBe(visible);
         });
 
     }

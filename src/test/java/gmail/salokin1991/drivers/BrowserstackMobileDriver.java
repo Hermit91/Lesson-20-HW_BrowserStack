@@ -33,8 +33,6 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
     @Override
     public WebDriver createDriver(DesiredCapabilities desiredCapabilities) {
 
-
-
         // Set your access credentials
         desiredCapabilities.setCapability("browserstack.user", user);
         desiredCapabilities.setCapability("browserstack.key", key);
